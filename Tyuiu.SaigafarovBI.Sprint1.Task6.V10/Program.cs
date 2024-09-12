@@ -1,5 +1,5 @@
-﻿using Tyuiu.SaigafarovBI.Sprint1.Task5.V2.Lib;
-namespace Tyuiu.SaigafarovBI.Sprint1.Task5.V2
+﻿using Tyuiu.SaigafarovBI.Sprint1.Task6.V10.Lib;
+namespace Tyuiu.SaigafarovBI.Sprint1.Task6.V10
 {
     internal class Program
     {
@@ -9,15 +9,14 @@ namespace Tyuiu.SaigafarovBI.Sprint1.Task5.V2
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Введите X:");
-            double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите строку:");
+            string x = Console.ReadLine();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.FahrenheitToСelsius(x));
-            string test = "123";
-            Console.WriteLine(test[0..1]);
+            Console.WriteLine(ds.DeleteMiddleLetter(x));
+
             Console.ReadKey();
         }
     }
