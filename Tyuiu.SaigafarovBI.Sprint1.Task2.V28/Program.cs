@@ -1,52 +1,34 @@
-﻿using Tyuiu.SaigafarovBI.Sprint1.Task1.V7.Lib;
-namespace Tyuiu.SaigafarovBI.Sprint1.Task1.V7
+﻿using Tyuiu.SaigafarovBI.Sprint1.Task2.V28.Lib;
+namespace Tyuiu.SaigafarovBI.Sprint1.Task2.V28
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            DataService dataService = new DataService();
+            DataService ds = new DataService();
             Console.Title = "Спринт #1 | Выполнил: Сайгафаров Б. И. | ПКТб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Создание итогового решения по спринту                             *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #28                                                             *");
             Console.WriteLine("* Выполнил: Сайгафаров Богдан Ирекович | ПКТб-24-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* вычисляет результат по формуле (5*x)/(y+x) и печатает его на экране.    *");
+            Console.WriteLine("* выполняет указанные расчёты и печатает результат на экране.             *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
             Console.WriteLine("Введите значение X:");
-            x = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите значение Y:");
-            y = Convert.ToDouble(Console.ReadLine());
-            
+            int x = Convert.ToInt32(Console.ReadLine());
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(dataService.Calculate(x,y));
-            int a = 3;
-
-            int b = --a + 2;
-
-            int c = b;
-
-            a = a + b + c;
-
-            c = b++ + a;
-
-            b = b - a;
-
-            int Y = a + b + c;
-
-            Console.WriteLine(Y);
+            Console.WriteLine("Температура в градусах Кельвина = " + ds.ConvertCelsiusToKelvin(x));
 
             Console.ReadKey();
         }
