@@ -27,13 +27,7 @@ namespace Tyuiu.SaigafarovBI.Sprint1.Task0.V8
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine(ds.Calculate());
-            int i = 5;
 
-            double f = 7.5;
-
-            double dbl = 10.01;
-
-            Console.WriteLine("i=" + i + "\\f=" + f + "\\dbl=" + dbl);
             Console.ReadKey();
         }
     }
