@@ -8,7 +8,7 @@ namespace Tyuiu.SaigafarovBI.Sprint1.Task5.V2.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            Assert.AreEqual(27, ds.FahrenheitTo—elsius(300.0));
+            Assert.AreEqual(149, ds.FahrenheitTo—elsius(300.0));
         }
     }
 }

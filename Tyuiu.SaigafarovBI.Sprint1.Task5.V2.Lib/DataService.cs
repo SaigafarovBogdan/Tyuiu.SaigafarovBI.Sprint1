@@ -6,7 +6,7 @@ namespace Tyuiu.SaigafarovBI.Sprint1.Task5.V2.Lib
     {
         public int FahrenheitToСelsius(double temp)
         {
-            return Convert.ToInt32(temp - 273);
+            return Convert.ToInt32((temp - 32)/1.8);
         }
     }
 }
