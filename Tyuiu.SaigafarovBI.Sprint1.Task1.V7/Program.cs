@@ -32,21 +32,6 @@ namespace Tyuiu.SaigafarovBI.Sprint1.Task1.V7
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine(dataService.Calculate(x,y));
-            int a = 3;
-
-            int b = --a + 2;
-
-            int c = b;
-
-            a = a + b + c;
-
-            c = b++ + a;
-
-            b = b - a;
-
-            int Y = a + b + c;
-
-            Console.WriteLine(Y);
 
             Console.ReadKey();
         }
